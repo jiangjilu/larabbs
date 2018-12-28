@@ -44,5 +44,12 @@ class UsersTableSeeder extends Seeder
         $user->avatar = 'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png?imageView2/1/w/200/h/200';
         $user->save();
 
+        // 单独处理第二个用户的数据
+        $user = User::find(2);
+        $user->name = '185852471';
+        $user->email = '185852471@qq.com';
+        $user->avatar = 'https://iocaffcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png?imageView2/1/w/200/h/200';
+        $user->save();
+
     }
 }
